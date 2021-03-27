@@ -14,7 +14,7 @@ namespace ElevenNote.Data
         public int NoteId { get; set; }
 
         [ForeignKey(nameof(Category))] //ForeignKey has a nameof and a public virtual.
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
 
         public virtual Category Category { get; set; }
 

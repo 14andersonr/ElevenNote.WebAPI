@@ -56,7 +56,9 @@ namespace ElevenNote.Data
                 .Add(new IdentityUserRoleConfiguration());
         }
 
-        public System.Data.Entity.DbSet<ElevenNote.WebAPI.Models.NoteDetail> NoteDetails { get; set; }
+        public DbSet<ElevenNote.WebAPI.Models.NoteDetail> NoteDetails { get; set; }
+
+        public System.Data.Entity.DbSet<ElevenNote.Models.NoteEdit> NoteEdits { get; set; }
     }
 
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
