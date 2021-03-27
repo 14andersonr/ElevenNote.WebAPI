@@ -8,6 +8,7 @@ namespace ElevenNote.WebAPI.Models
 {
     public class NoteDetail
     {
+        [Key]
         public int NoteId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
