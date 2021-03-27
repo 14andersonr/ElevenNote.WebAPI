@@ -12,6 +12,6 @@ namespace ElevenNote.WebAPI.Models
         public string Title { get; set; }
         
         [Display(Name = "Created")]
-        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? CreatedUtc { get; set; }
     }
 }
